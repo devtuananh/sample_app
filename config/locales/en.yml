@@ -1,33 +1,58 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  application:
+    pls_login: "Please log in"
+  
+  helpers:
+    application:
+      base_title: "Ruby on Rails Tutorial Sample App"
+  layouts:
+    _footer:
+      about: "About"
+      author: "Michael Hartl"
+      contact: "Contact"
+      by: "by"
+      new: "News"
+      ror: "Ruby on Rails"
+      the: "The"
+      contact_link: "http://news.railstutorial.org/"
+      ror_link: "http://www.railstutorial.org/"
+      author_link: "http://www.michaelhartl.com/"
+    _header:
+      nameapp: "Sample App"
+      home: "Home"
+      help: "Help"
+      login: "Login"
+      account: "Account"
+      logout: "Logout"
+      users: "Users"
+      profile: "Profile"
+      setting: "Settings"
+
+  static_pages:
+    about:
+      h1: "About"
+      the: "The"
+      ror: "Ruby on Rails Tutorial"
+      is: "is a"
+      book: "book"
+      and: "and"
+      screencasts: "screencast series"
+      screencasts_1: "to teach web development with"
+      p: "This is the sample application for the tutorial."
+    contact:
+      h1: "Contact"
+      p: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      contact: "contact page"
+    help:
+      h1: "Help"
+      p: "Get help on the Ruby on Rails Tutorial at the"
+      help: "Rails Tutorial help page"
+      a: "To get help on this sample app, see the"
+      usernotfound: "Users ID not found"
+    home:
+      h1: "Welcome to the Sample App"
+      h2: "This is the home page for the"
+      h2_1: "sample application."
+      h3: "Micropost Feed"
+      signup: "Sign up now!"
+      rails_logo: "Rails logo"
