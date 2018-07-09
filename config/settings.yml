@@ -1,0 +1,11 @@
+user_helper:
+  size: 80
+validates:
+  name:
+    maximum: 50
+  email:
+    maximum: 255
+  password:
+    minimum: 6
+session_controller:
+  session: 1
