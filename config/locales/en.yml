@@ -5,23 +5,24 @@ en:
   helpers:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
+ 
   layouts:
-    _footer:
+    footer:
       about: "About"
       author: "Michael Hartl"
       contact: "Contact"
       by: "by"
       new: "News"
-      ror: "Ruby on Rails"
+      rails: "Ruby on Rails"
       the: "The"
       contact_link: "http://news.railstutorial.org/"
       ror_link: "http://www.railstutorial.org/"
       author_link: "http://www.michaelhartl.com/"
-    _header:
+    header:
       nameapp: "Sample App"
       home: "Home"
       help: "Help"
-      login: "Login"
+      login: "Log in"
       account: "Account"
       logout: "Logout"
       users: "Users"
@@ -49,6 +50,7 @@ en:
       help: "Rails Tutorial help page"
       a: "To get help on this sample app, see the"
       usernotfound: "Users ID not found"
+      book: "Books"
     home:
       h1: "Welcome to the Sample App"
       h2: "This is the home page for the"
@@ -56,3 +58,15 @@ en:
       h3: "Micropost Feed"
       signup: "Sign up now!"
       rails_logo: "Rails logo"
+      error_messages: "Could not find user ?"
+  users:
+    new: 
+      h1: "Sign up"
+      create: "Create my account"
+      confirm: "Confirmation"
+  shared:
+    error_messages:
+      mess: "The form contains"
+  sessions:
+    danger: "Invalid email/password combination"
+    new_user: "New user ?"
