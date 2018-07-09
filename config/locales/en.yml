@@ -56,3 +56,11 @@ en:
       h3: "Micropost Feed"
       signup: "Sign up now!"
       rails_logo: "Rails logo"
+
+  users:
+    new: 
+      h1: "Sign up"
+      create: "Create my account"
+  shared:
+    _error_messages:
+      mess: "The form contains"
