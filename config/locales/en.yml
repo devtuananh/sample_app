@@ -50,7 +50,6 @@ en:
       help: "Rails Tutorial help page"
       a: "To get help on this sample app, see the"
       usernotfound: "Users ID not found"
-      book: "Books"
     home:
       h1: "Welcome to the Sample App"
       h2: "This is the home page for the"
@@ -64,6 +63,12 @@ en:
       h1: "Sign up"
       create: "Create my account"
       confirm: "Confirmation"
+    edit:
+      edit: "Edit user"
+      h1: "Update your profile"
+      save_change: "Save changes"
+      change: "change"
+      change_avatar: "http://gravatar.com/emails"
   shared:
     error_messages:
       mess: "The form contains"
