@@ -13,6 +13,8 @@ gem "bootsnap", require: false
 gem "coffee-rails", "~> 4.2"
 gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
+gem "jquery-rails", "~> 4.3", ">= 4.3.3"
+gem "config"
 
 group :development, :test do
   gem "sqlite3"
