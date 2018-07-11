@@ -1,3 +1,4 @@
+
 ActiveRecord::Schema.define(version: 2018_07_10_080707) do
 
   create_table "users", force: :cascade do |t|
