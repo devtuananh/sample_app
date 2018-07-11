@@ -1,4 +1,5 @@
 en:
+
   application:
     pls_login: "Please log in"
   
@@ -49,7 +50,7 @@ en:
       p: "Get help on the Ruby on Rails Tutorial at the"
       help: "Rails Tutorial help page"
       a: "To get help on this sample app, see the"
-      usernotfound: "Users ID not found"
+      usernotfound: "Users not found"
     home:
       h1: "Welcome to the Sample App"
       h2: "This is the home page for the"
@@ -57,8 +58,27 @@ en:
       h3: "Micropost Feed"
       signup: "Sign up now!"
       rails_logo: "Rails logo"
-      error_messages: "Could not find user ?"
+      usernotfound: "Users not found"
   users:
+    logged_in_user:
+      pleaselogin: "Please log in"
+    update:
+      prupdate: "Profile updated"
+    destroy:
+      success: "User deleted"
+      failed: "Users not found"
+    user:
+      confirm: "You sure?"
+      del: "Delete"
+    index:
+      all: "All users"
+      pleaselogin: "Please log in"
+      pagination:
+        first: "« FIRST"
+        last: "LAST »"
+        previous: "‹ PREV"
+        next: "NEXT ›"
+        truncate: "…"
     new: 
       h1: "Sign up"
       create: "Create my account"
@@ -67,8 +87,9 @@ en:
       edit: "Edit user"
       h1: "Update your profile"
       save_change: "Save changes"
-      change: "change"
+      change: "Change"
       change_avatar: "http://gravatar.com/emails"
+      pleaselogin: "Please log in"
   shared:
     error_messages:
       mess: "The form contains"

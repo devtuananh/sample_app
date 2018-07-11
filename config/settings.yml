@@ -1,5 +1,7 @@
 user_helper:
   size: 80
+index:
+  size: 50
 validates:
   name:
     maximum: 50
@@ -9,3 +11,5 @@ validates:
     minimum: 6
 session_controller:
   session: 1
+show_limit:
+  show_10: 10
