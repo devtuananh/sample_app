@@ -1,6 +1,6 @@
-require_relative 'boot'
-
-require 'rails/all'
+require_relative "boot"
+require "kaminari"
+require "rails/all"
 
 Bundler.require(*Rails.groups)
 
