@@ -11,19 +11,19 @@ class UsersController < ApplicationController
   def new
     @user = User.new
   end
-  
+
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "static_pages.home.h1"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t ".check_activation"
+      redirect_to root_url
     else
       render :new
     end
   end
 
-  def show
+  def show;
   end
 
   def edit
@@ -44,7 +44,7 @@ class UsersController < ApplicationController
       redirect_to users_path
     else
       flash[:danger] = t "static_pages.home.usernotfound"
-      redirect_to users_path 
+      redirect_to users_path
     end
   end
 

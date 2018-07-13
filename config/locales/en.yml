@@ -2,11 +2,11 @@ en:
 
   application:
     pls_login: "Please log in"
-  
+
   helpers:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
- 
+
   layouts:
     footer:
       about: "About"
@@ -59,9 +59,12 @@ en:
       signup: "Sign up now!"
       rails_logo: "Rails logo"
       usernotfound: "Users not found"
+
   users:
     logged_in_user:
       pleaselogin: "Please log in"
+    create:
+      check_activation: "Please check your email to activate your account."
     update:
       prupdate: "Profile updated"
     destroy:
@@ -79,7 +82,7 @@ en:
         previous: "‹ PREV"
         next: "NEXT ›"
         truncate: "…"
-    new: 
+    new:
       h1: "Sign up"
       create: "Create my account"
       confirm: "Confirmation"
@@ -90,14 +93,30 @@ en:
       change: "Change"
       change_avatar: "http://gravatar.com/emails"
       pleaselogin: "Please log in"
+
   shared:
     error_messages:
       mess: "The form contains"
+
   sessions:
     create:
-      warning_active: "Account not activated.Check your email for the activation link."
-      danger: "Invalid email/password combination"
+      invalid: "Invalid email/password combination"
+      message: "Account not activated. Check your email for the activation link"
     new:
       remember: "Remember me on this computer"
       forgot: "Forgot your password?"
       new_user: "New user ?"
+
+  account_activations:
+    activated: "Account activated!"
+    invalid: "Invalid activation link"
+
+  user_mailer:
+    nameapp: "Sample App"
+    p: "Welcome to the Sample App! Click on the link below to activate your account:"
+    activate: "Activate"
+    subject: "Account activation"
+    hi: "Hi"
+    activate: "Activate"
+    h1: "User#password_reset"
+    p_reset: ", find me in app/views/user_mailer/password_reset.html.erb"
