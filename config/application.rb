@@ -1,6 +1,9 @@
 require_relative "boot"
 require "kaminari"
 require "rails/all"
+require "net/http"
+require "openssl"
+require "resolv-replace"
 
 Bundler.require(*Rails.groups)
 

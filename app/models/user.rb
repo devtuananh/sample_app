@@ -20,7 +20,7 @@ class User < ApplicationRecord
   end
 
   def remember
-    remember_token = User.new_token
+    self.remember_token = User.new_token
     update_attributes remember_digest: User.digest(remember_token)
   end
 
@@ -55,7 +55,7 @@ class User < ApplicationRecord
   end
 
   def create_activation_digest
-    activation_token = User.new_token
-    activation_digest = User.digest activation_token
+    self.activation_token = User.new_token
+    self.activation_digest = User.digest activation_token
   end
 end
