@@ -13,3 +13,5 @@ session_controller:
   session: 1
 show_limit:
   show_10: 10
+password_reset_expired:
+  time: 2

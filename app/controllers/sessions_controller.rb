@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
           remember(user) : forget(user)
         redirect_back_or user
       else
-        flash[:warning] = t ".message"
+        flash[:warning] = t "activation.warning"
         redirect_to root_url
       end
     else
