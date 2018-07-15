@@ -59,7 +59,7 @@ en:
       signup: "Sign up now!"
       rails_logo: "Rails logo"
       usernotfound: "Users not found"
-
+      micropost_feed: "Micropost Feed"
   users:
     logged_in_user:
       pleaselogin: "Please log in"
@@ -95,7 +95,7 @@ en:
   shared:
     error_messages:
       mess: "The form contains"
-
+      error: "error"
   sessions:
     create:
       invalid: "Invalid email/password combination"
@@ -115,7 +115,7 @@ en:
       activate: "Activate"
       hi: "Hi %{username},"
       welcome: "Welcome to the Sample App! Click on the link below to activate.
-         your account:"
+        your account:"
 
   reset_password:
     title: "Forgot password"
@@ -148,3 +148,21 @@ en:
       password_expired: "Password reset has expired."
       password_not_empty: "can't be empty"
       success: "Password has been reset."
+
+  microposts:
+    h3: "Microposts (%{count})"
+    user_profile: "View my profile"
+    content: "Compose new micropost..."
+    btn_post: "Post"
+    btn_delete: "Delete"
+    confirm: "You want to delete %{name_micropost}.Are you sure?"
+    timestamp: "Posted %{time_post_ago} ago."
+    picture_too_large_size: "should be less than %{size}MB.
+      Please choose a smaller file."
+    max_size_image: "Maximum file size is 5MB. Please choose a smaller file."
+    create:
+      success: "Micropost created!"
+      waning: "Can not create Micropost!"
+    destroy:
+      success: "Micropost deleted"
+      error: "Micropost delete fails"
