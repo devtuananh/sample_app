@@ -16,18 +16,16 @@ class UsersController < ApplicationController
     @user = User.new user_params
     if @user.save
       @user.send_activation_email
-      flash[:info] = t ".check_activation"
+      flash[:info] = t "activation.check_email"
       redirect_to root_url
     else
       render :new
     end
   end
 
-  def show;
-  end
+  def show; end
 
-  def edit
-  end
+  def edit; end
 
   def update
     if @user.update_attributes user_params
