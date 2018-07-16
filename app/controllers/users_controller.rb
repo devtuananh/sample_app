@@ -23,7 +23,9 @@ class UsersController < ApplicationController
     end
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.by_newest.page(params[:page]).per Settings.show_limit.show_10
+  end
 
   def edit; end
 
