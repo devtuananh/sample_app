@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
   before_action :correct_user, only: [:edit, :update]
   before_action :verify_admin, only: :destroy
-  before_action :load_user, only: [:show, :edit, :update, :destroy]
+  before_action :load_user, except: [:new, :create, :index]
 
   def index
     @users = User.page(params[:page]).per Settings.show_limit.show_10
@@ -50,13 +50,6 @@ class UsersController < ApplicationController
   end
 
   private
-
-  def load_user
-    @user = User.find_by id: params[:id]
-    return if @user
-    flash[:danger] = t "static_pages.home.usernotfound"
-    redirect_to root_path
-  end
 
   def verify_admin
     return if current_user.admin?

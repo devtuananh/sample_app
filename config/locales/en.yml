@@ -61,6 +61,7 @@ en:
       usernotfound: "Users not found"
       micropost_feed: "Micropost Feed"
   users:
+    user_not_exist: "User doesn't exist."
     logged_in_user:
       pleaselogin: "Please log in"
     update:
@@ -91,11 +92,22 @@ en:
       change: "Change"
       change_avatar: "http://gravatar.com/emails"
       pleaselogin: "Please log in"
+    flow_user:
+      following: "Following"
+      followers: "Followers"
+      follow: "Follow"
+      unfollow: "Unfollow"
+    show_follow:
+      profile: "view my profile"
+      post: "Microposts"
 
   shared:
     error_messages:
       mess: "The form contains"
       error: "error"
+    stats:
+      following: "following"
+      followers: "followers"
   sessions:
     create:
       invalid: "Invalid email/password combination"

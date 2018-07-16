@@ -2,6 +2,7 @@ user_helper:
   size: 80
 avatar:
   size: 50
+  small_size: 30
 validates:
   name:
     maximum: 50

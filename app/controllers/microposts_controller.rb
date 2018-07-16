@@ -9,10 +9,9 @@ class MicropostsController < ApplicationController
       flash[:success] = t ".success"
       redirect_to root_url
     else
-      @feed_items = current_user.feed.by_newest.page params[:page].per
-        Settings.show_limit.show_10
+      @feed_items = current_user.feed.by_newest.page(params[:page]).per Settings.show_limit.show_10
       flash[:danger] = t ".waning"
-      render root_path
+      redirect_to root_url
     end
   end
 
