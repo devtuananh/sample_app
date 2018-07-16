@@ -1,6 +1,6 @@
 user_helper:
   size: 80
-index:
+avatar:
   size: 50
 validates:
   name:
@@ -15,3 +15,9 @@ show_limit:
   show_10: 10
 password_reset_expired:
   time: 2
+picture:
+  size: 5
+image:
+  resize_width_limit: 400
+  resize_height_limit: 400
+content_maximum: 140
