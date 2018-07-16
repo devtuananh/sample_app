@@ -24,7 +24,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    @microposts = @user.microposts.page(params[:page]).per Settings.show_limit.show_10
+    @microposts = @user.microposts.page(params[:page])
+      .per Settings.show_limit.show_10
   end
 
   def edit; end

@@ -10,8 +10,9 @@ class Micropost < ApplicationRecord
   private
 
   def picture_size
-    return if picture.size > Settings.picture.size.megabytes
-    errors.add :picture, t("microposts.picture_too_large_size",
-      size: Settings.picture.size)
+    if picture.size > Settings.picture.size.megabytes
+      errors.add :picture, I18n.t(".picture_too_large_size",
+        size: Settings.picture.size)
+    end
   end
 end
