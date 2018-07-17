@@ -5,4 +5,12 @@ module UsersHelper
     gravatar_url = "https://secure.gravatar.com/avatar/#{gravatar_id}?s=#{size}"
     image_tag gravatar_url, alt: user.name, class: "gravatar"
   end
+
+  def build_active_relationships
+    current_user.active_relationships.build
+  end
+
+  def followed_user id
+    current_user.active_relationships.find_by followed_id: id
+  end
 end
